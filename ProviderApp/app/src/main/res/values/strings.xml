@@ -1,0 +1,26 @@
+<resources>
+    <string name="google_android_geo_api_key">AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s</string>
+
+    <string name="app_name">Multi X Pro Provider</string>
+
+    <string name="demo_mobile_help">Note: Please enter the OTP \"1234\" If you do not receive SMS/EMAIL on your registered number in next one minute.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="defaultFont">@string/system_regular</string>
+
+    <string name="system_light">fonts/OpenSans_Light.ttf</string>
+    <string name="system_regular">fonts/OpenSans_Regular.ttf</string>
+    <string name="system_medium">fonts/OpenSans_Medium.ttf</string>
+    <string name="system_semi_bold">fonts/OpenSans_SemiBold.ttf</string>
+    <string name="system_bold">fonts/OpenSans_Bold.ttf</string>
+
+    <string name="facebook_app_id">12345678</string>
+    <string name="facebook_client_token">56789</string>
+
+    <!--// not changes name-->
+    <string name="mdtp_date_week_day_formatter">EEE</string>
+    <!--// not changes name-->
+
+</resources>

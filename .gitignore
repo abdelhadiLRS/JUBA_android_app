@@ -1,0 +1,31 @@
+﻿# Android / Gradle
+**/build/
+**/.gradle/
+
+# Android Studio
+.idea/
+*.iml
+
+# Local configuration
+local.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Keep production APKs
+!ProviderApp/app/prod/
+!ProviderApp/app/prod/release/
+!ProviderApp/app/prod/release/*.apk
+
+!StoreApp/app/prod/
+!StoreApp/app/prod/release/
+!StoreApp/app/prod/release/*.apk
+
+!UserApp/app/prod/
+!UserApp/app/prod/release/
+!UserApp/app/prod/release/*.apk

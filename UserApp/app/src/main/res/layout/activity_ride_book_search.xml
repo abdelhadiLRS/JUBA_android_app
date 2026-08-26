@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRideBookSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_include"
+            android:clipToPadding="false"
+            android:padding="@dimen/_15sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_ride_book_search" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/noDataArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_ride_no_data" />
+
+            <com.view.MTextView
+                android:id="@+id/noDataTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_51sdp"
+                android:textAlignment="center"
+                android:textColor="@color/text23Pro_Dark"
+                android:textSize="@dimen/_13ssp"
+                app:customTypeFace="@string/system_bold"
+                tools:text="No Record" />
+
+            <com.view.MTextView
+                android:id="@+id/noDataMsgTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textAlignment="center"
+                android:textColor="@color/textSub23Pro_gray"
+                android:textSize="@dimen/_12ssp"
+                app:customTypeFace="@string/system_regular"
+                tools:text="No Record" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

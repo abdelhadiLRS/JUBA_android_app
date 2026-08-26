@@ -1,0 +1,275 @@
+{
+  "project_info": {
+    "project_number": "83295399028",
+    "firebase_url": "https://multi-x-pro-default-rtdb.firebaseio.com",
+    "project_id": "multi-x-pro",
+    "storage_bucket": "multi-x-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:66c44495b8190f8779f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.foodkiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-thpvaj1oh8np5do39tpvjgm1oavlqpg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.foodkiosk",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:ea675b484526d83b79f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-kd4h4u71d35iihj0j075jmhub3bjhmco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.provider",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:3fada4c872c1697579f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-b47vpqmv143qoh2uup090aajk40uasoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.store",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:7e059f2e27dc79f879f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.taxikiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-mdu81dq20qc4qe5m18b4bl742ela6enm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.taxikiosk",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:238c89730e7830ec79f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.tracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-b4ssdn27074b7614kjk7af9mtirc5bn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.tracking",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83295399028:android:d0c5ec13d69bbe1779f521",
+        "android_client_info": {
+          "package_name": "com.multixpro.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83295399028-7kkdgdfjpopjhvfqq794ignuqvt8lp6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multixpro.user",
+            "certificate_hash": "d9a85d5a43876e907534438cac98c7c7de7a6e8b"
+          }
+        },
+        {
+          "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJN52515IymlXkcQURVDFgrDK3WkFFw7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83295399028-q6tn3ntouhrc6c56f9r2f1pjhepjsgsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "83295399028-1htc31t2c71bqcri2qvfsn7m2lba5732.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.multixpro.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

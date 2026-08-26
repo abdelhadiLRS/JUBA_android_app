@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shimmer_color">#a2878787</color>
+    <color name="light_transparent">#16000000</color>
+
+    <!-- Theme configuration -->
+    <color name="appThemeColor_1">#45aeac</color> <!--used for bg-->
+    <color name="appThemeColor_Dark_1">#45aeac</color> <!--used for Border OR Others-->
+    <color name="appThemeColor_hover_1">#63CAB2</color> <!--used for hover-->
+    <color name="appThemeColor_TXT_1">#FFFFFF</color> <!--used for text color-->
+    <color name="appThemeColor_bg_parent_1">@android:color/transparent</color>
+    <color name="app_login_txt_color">#FFFFFF</color>
+    <color name="registerTxtcolor">@color/white</color>
+    <color name="loginTxtcolor">@color/white</color>
+    <color name="introTxtcolor">#545454</color>
+    <color name="appThemeColor_2">#45aeac</color> <!--used for bg-->
+    <color name="appThemeColor_hover_2">#91caaa</color> <!--used for hover-->
+    <color name="appThemeColor_TXT_2">#FFFFFF</color> <!--used for text color-->
+    <color name="appThemeColor_Light_1">#45AFA3</color>
+
+    <!--used for parent bg color if applies-->
+
+    <!-- Theme configuration End-->
+
+    <!--Screen specific color start-->
+
+    <color name="transparent_full">#00000000</color>
+    <color name="homedeSelectColor">#787878</color>
+
+
+    <color name="requestTimerColor">@color/appThemeColor_1</color> <!--used for bg-->
+    <color name="history_txt_color">@color/appThemeColor_1
+    </color> <!--used for parent bg color if applies-->
+    <color name="eme_txt_color">#333333</color> <!--used for parent bg color if applies-->
+    <color name="bt_error_red">#dd5555</color>
+
+    <!--Screen specific color end-->
+
+    <!-- EditBox configuration Start-->
+    <color name="editBox_primary">@color/appThemeColor_1</color> <!--used for EditBox-->
+    <color name="editBox_primary_dark">@color/appThemeColor_1</color> <!--used for EditBox-->
+    <color name="editBox_accent">@color/appThemeColor_1</color> <!--used for EditBox-->
+    <!-- EditBox configuration End-->
+
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+
+    <color name="Green">#009900</color>
+    <color name="green_1">#34C759</color>
+
+    <!--errorView colors-->
+
+    <!--error view colors finished-->
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#222222</color>
+    <color name="gray">#90909090</color>
+    <color name="imageBg">#e5e5ea</color>
+    <color name="gray_light">#e9eef2</color>
+    <color name="activityBg">#f1f1f1</color>
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <color name="red">#E40707</color>
+    <color name="green">#008000</color>
+    <color name="ratingfill">#FBB100</color>
+    <item name="rating_fill_color" type="color">#fab00a</item>
+
+
+    <!--    country lib color-->
+    <color name="countryNameColorOnLight">#000000</color>
+    <color name="dialCodeColorOnLight">#000000</color>
+    <color name="rowBackgroundColorLight">#FFFFFF</color>
+    <color name="rowBackgroundSelectedColorLight">#d7d5d5</color>
+    <color name="defaultColor">#aaa</color>
+    <!--   // country lib color-->
+
+    <!--   23 Pro color-->
+    <color name="cardView23ProBG">#F6F6F6</color>
+    <color name="view23ProBG">#DDDDDD</color>
+    <color name="imageCircleBg23Pro_Light">#F2F2F2</color>
+
+    <color name="text23Pro_Light">#8FA1B4</color>
+    <color name="text23Pro_Dark">#1B2A3B</color>
+    <color name="textSub23Pro_gray">#707070</color>
+    <!--   // 23 Pro color-->
+
+    <!--// not changes name-->
+    <!--<color name="mdtp_date_picker_dot_highlighted">@color/red</color>
+    <color name="mdtp_date_picker_highlighted_dot_dark_theme">@color/red</color>-->
+    <!--// not changes name-->
+
+</resources>

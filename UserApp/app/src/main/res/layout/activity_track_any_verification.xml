@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/design_toolbar_general" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.view.MTextView
+                android:id="@+id/otpHelpTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="start"
+                android:padding="@dimen/_2sdp"
+                android:textColor="#646464"
+                android:textSize="@dimen/_12ssp"
+                app:customTypeFace="@string/system_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.mukesh.OtpView
+                    android:id="@+id/mob_otp_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/bg_otp_item"
+                    android:textColor="@color/appThemeColor_1"
+                    app:itemCount="4"
+                    app:itemSpacing="@dimen/_10sdp"
+                    app:lineColor="@color/otp_item_state"
+                    app:state_filled="true"
+                    app:viewType="rectangle"
+                    tools:hint="." />
+
+                <LinearLayout
+                    android:id="@+id/firebaseOTP_View"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/square_border_common"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.view.editBox.MaterialEditText
+                        android:id="@+id/firebaseOTP_Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textAlignment="center"
+                        android:textColor="#141414"
+                        android:textSize="@dimen/_14ssp"
+                        app:customTypeFace="@string/system_regular"
+                        app:met_hideUnderline="true"
+                        tools:hint="Enter OTP" />
+                </LinearLayout>
+
+                <com.view.MTextView
+                    android:id="@+id/resendBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/_14ssp"
+                    app:customTypeFace="@string/system_regular"
+                    tools:text="retry...." />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_60sdp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bgImgView"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_tracking_bgmap"
+            app:tint="@color/gray" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRentItemListPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_rent_item_list_post" />
+
+        <ProgressBar
+            android:id="@+id/loading_images"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.view.MTextView
+            android:id="@+id/noDataTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_size_18"
+            android:textStyle="bold"
+            tools:text="No Record" />
+
+        <com.view.FloatingAction.FloatingActionButton
+            android:id="@+id/floatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@mipmap/fab_add_prj"
+            app:fab_colorNormal="@color/appThemeColor_1"
+            app:fab_colorPressed="@color/appThemeColor_1"
+            app:fab_colorRipple="@color/appThemeColor_TXT_1" />
+    </RelativeLayout>
+</LinearLayout>

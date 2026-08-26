@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deliverAll.checkAddView">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/itemContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+              <com.view.MTextView
+                  android:layout_margin="@dimen/_10sdp"
+                       android:background="@drawable/login_fb_border"
+                  android:gravity="center"
+                  android:id="@+id/additemTxt"
+                  android:text="Add Item"
+                  android:padding="@dimen/_10sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"></com.view.MTextView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

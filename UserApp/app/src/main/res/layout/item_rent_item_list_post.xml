@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rentItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardView23ProBG"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.view.SelectableRoundedImageView
+                        android:id="@+id/ivRentItemImageL"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/imageBg"
+                        app:sriv_left_bottom_corner_radius="@dimen/_7sdp"
+                        app:sriv_left_top_corner_radius="@dimen/_7sdp"
+                        app:sriv_oval="false" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivRentItemImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:src="@color/imageBg"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <com.view.MTextView
+                                android:id="@+id/txtPostNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/txt_size_12"
+                                app:customTypeFace="@string/system_semi_bold"
+                                tools:text="@string/app_name" />
+
+                            <com.view.MTextView
+                                android:id="@+id/txtPostTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/txt_size_12"
+                                app:customTypeFace="@string/system_semi_bold"
+                                tools:text="@string/app_name" />
+
+                            <com.view.MTextView
+                                android:id="@+id/txtPostDurationStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/txt_size_12"
+                                app:customTypeFace="@string/system_regular"
+                                tools:text="@string/app_name" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.view.MTextView
+                                    android:id="@+id/txtPostDelete"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_border"
+                                    android:backgroundTint="@color/pickup_req_later_btn"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp"
+                                    app:customTypeFace="@string/system_medium"
+                                    tools:text="Delete" />
+
+                                <View
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="0dp" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/txtPostReview"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_border"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp"
+                                    app:customTypeFace="@string/system_medium"
+                                    tools:text="Review POst" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/extraBtnView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_10sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.view.MTextView
+                                    android:id="@+id/txtPostReject"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_border"
+                                    android:backgroundTint="@color/pickup_req_later_btn"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp"
+                                    app:customTypeFace="@string/system_medium"
+                                    tools:text="Reject post" />
+
+                                <View
+                                    android:id="@+id/extraView"
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="0dp" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/txtContactUs"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_border"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp"
+                                    app:customTypeFace="@string/system_medium"
+                                    tools:text="contact us" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llExtraArea"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rentTagImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/tag" />
+
+        <com.view.MTextView
+            android:id="@+id/rentPostStatusTagTxt"
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            app:customTypeFace="@string/system_medium"
+            tools:text="Recommendessssdfsdfs" />
+
+    </RelativeLayout>
+</layout>

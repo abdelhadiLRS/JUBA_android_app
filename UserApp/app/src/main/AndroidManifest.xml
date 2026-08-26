@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.multixpro.user">
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <permission
+        android:name="com.multixpro.user.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <uses-permission
+        android:name="com.yupixpro.user.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.general.files.MyApp"
+        android:allowBackup="false"
+        android:directBootAware="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatTheme"
+        tools:replace="android:allowBackup">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3137346768994554~2524650086" />
+        <meta-data
+            android:name="com.google.key1"
+            android:value="$2y$05$flPKXIcqnMX2pI3zeR5rhOl9ftbjVeeseh/sAtV1paZwD6N3..a6y6512908c90b119fa14b16e3ae56a934a$2y$05$cVT2D4RPPTdwvO/kj3SXYOr40PE2.KEh9kZ3hqck.JfUxbImnq2J26512908c90b119fa14b16e3ae56a934a$2y$05$j5K0b.VMjILdC8ndmbHsOuBeEDdCrxebrzg/KqZu2.hbxKc1NwDVS6512908c90b119fa14b16e3ae56a934a$2y$05$qzjKQdQcRJ1OzxnyHEHs3uIUc8A83Kij/Vy14oWK2LAt2SE552jSe6512908c90b119fa14b16e3ae56a934a$2y$05$BL2DSIe210J1gM7xqnsSQu9ORi07j/qNXxh4kFczsN3kLmqi34VwO6512908c90b119fa14b16e3ae56a934a$2y$05$kzXBqJsC3LWHdHZxYTSMP.6iK4fDVcjq.JEAPqWinXJAPF.B.0YJa6512908c90b119fa14b16e3ae56a934a$2y$05$BUXrYu3UsLv59vEr6fkpHeRfTPmGlKdVRqFM8hv6i4ENQbt2V4Cnm6512908c90b119fa14b16e3ae56a934a$2y$05$FaluHFLafPki38KnqtZcLOIXYdQmGIsoBR3m3WVzaEPfYXFtdmQNW6512908c90b119fa14b16e3ae56a934a$2y$05$9E71SeJkiG4kMQ./X5bUMOG7V5B1XBO9FMG9fAW4huRheuUvaQtD.6512908c90b119fa14b16e3ae56a934a$2y$05$2F2C32GIMjZrxDRRPJaBSuzDYEFzuNBT7UaJbo6uKhuq3kSwtFg7.6512908c90b119fa14b16e3ae56a934a$2y$05$fpkIQhsLojkcZibV8.E5zu2./BFxaN5MtzQGa9./ZELlS2IYOuPwu6512908c90b119fa14b16e3ae56a934a$2y$05$nyk4h4yKnF1.MnWqF5V3.eFbifRJA1N8DIAGc3GYWDZ7.lp8ZWKHq6512908c90b119fa14b16e3ae56a934a$2y$05$qclLAJzP3FBwdTq2g3qrV.w3fKm0w0oWZS1Fdlioba4GuH4EAu6IG6512908c90b119fa14b16e3ae56a934a$2y$05$PXV3sAEe9Ev/Bk9PdfPkK.ieY9yXfpPO9o5dq0EBQBxM17p5/ybGy6512908c90b119fa14b16e3ae56a934a$2y$05$r8UV.PyPrQT6Z3OkIzkNOuJY3yQZ3t9ZjdTQ6DvLyUIvrR3r8ALb26512908c90b119fa14b16e3ae56a934a$2y$05$0vdIFactEWOpW/GZzvxfZefhrIJr6qBuWAdifFPbK.YIiFCYx9za26512908c90b119fa14b16e3ae56a934a$2y$05$x3SP.r7DsjnBI4/2zvu1hOatPMQggMyCtFHigPEt6LucqlqWJgakq6512908c90b119fa14b16e3ae56a934a$2y$05$GtG7gR2idfXeoCSKMBaMNurhJHEe/6Ru0vnz2Y0o/3JKP5G1RZ7FW6512908c90b119fa14b16e3ae56a934a$2y$05$Z4ehg5UT4FsavHbX6vS0BeMzCJarf5W/fZGKHFLnDd4EbyTyJlj/S6512908c90b119fa14b16e3ae56a934a$2y$05$CZFUmEh2PGoaGmiQiip9.OeGnFBuqPOSXkld9S6FtbW9iQ47d5rY.6512908c90b119fa14b16e3ae56a934a$2y$05$WaVHGpqRntgtYmgV1WBhLuE6xz3Qo3H4tOn0B4dP7yWTFOmfBymBW6512908c90b119fa14b16e3ae56a934a$2y$05$RDQ.x0HEY7U/08.7nKZXJuP0pKgex2i2R7GmOwOIn9TqSO2nb4HxO6512908c90b119fa14b16e3ae56a934a$2y$05$fwSMAlpN7v9dFhZ6nkzeHuK2dTHR6X5NQcM8HPkv3r2bGgSPiRQCy6512908c90b119fa14b16e3ae56a934a$2y$05$vGHQPViygknOJlxplbvb5eVqghNDGFdiP/1fCxkGRD2pcOnBjqwM66512908c90b119fa14b16e3ae56a934a$2y$05$8uDE0oVTJQ2qJZYv5KbdCujA.WB22jY4I6/JV6Gv29VdN0wO.xSxW6512908c90b119fa14b16e3ae56a934a$2y$05$yRVFGPpdTlfrSYMI4cijIO.XHTnvyEwMhYB9q.SbDMmRm6sxgrsYm6512908c90b119fa14b16e3ae56a934a$2y$05$pAFAxG31vq/JSksmKrYknuDVu4EZ9MHMDM25YjswDLs3XQ6P7rkUm6512908c90b119fa14b16e3ae56a934a$2y$05$dTvuw/KZUYTCTQtJGj5Nku68LtzTpxRn/du/yn0lkoBB5HOFnMprS6512908c90b119fa14b16e3ae56a934a$2y$05$qrDP28s8jGF934Bl1JxgTOvbok4e6QW5Y67lgQBDJYqzTxx2.t9sK6512908c90b119fa14b16e3ae56a934a$2y$05$Fm20d4qE6ZYzXZ/y4WtEI.qWeEx6VaZ5a9XEksw6hXj.HnUpb14s26512908c90b119fa14b16e3ae56a934a$2y$05$KYXM0qJws6TiMW1ACqkVm.m1./.I8RLS05I8cyGH29y5X1tAZFeXG6512908c90b119fa14b16e3ae56a934a$2y$05$wWULiTtwaSEV6YMqpA/uNe2qK56XCIsi3sPmCOwrbVC0vWZC0pviu6512908c90b119fa14b16e3ae56a934a$2y$05$KfjMWEZtqV/q7qR1GdmQg.WBPPZCW2JWoNPeuROgHHqAf/z7jvejC6512908c90b119fa14b16e3ae56a934a$2y$05$9U078h0s9xlCnQdE15ZRc.WVXpxhf5O4J16EP8a6lOG1cX4Jf7Cnu6512908c90b119fa14b16e3ae56a934a$2y$05$Ss94fQR68bJYo1n5jcgCjuih03PKhq/3I6maJrgDpKptD4DSrD6oi6512908c90b119fa14b16e3ae56a934a$2y$05$NWrR8D4qQpv8fYRKQMd1TOJOWNhLxoTJRKZ1nlIZZVCVzfs/Le9aG6512908c90b119fa14b16e3ae56a934a$2y$05$qrBTanp6YTz55ITO8l0FiORe5peBMegP9vGjA8FBXFBkLZXypEzny6512908c90b119fa14b16e3ae56a934a$2y$05$bX6WJeyarr10OG23BNEPfukBN7Y34mRtrOPmflfIlCMYRYGpd.y5C6512908c90b119fa14b16e3ae56a934a$2y$05$FEC99cRXpPHm/5Gdi07Yg.W4vLoed36yaQ6.RiV8r.SEY7NruXa4i6512908c90b119fa14b16e3ae56a934a$2y$05$Z1.EiDIjMPXYQ9kjibJJNuzMF31Ry6fO5G77fhXZL3RD2ku3P.gF.6512908c90b119fa14b16e3ae56a934a$2y$05$N6nDlqLDdohTdOdqz.M4KeJmtqrZCCldPY.vJHKSE9yW4g.2blrEW6512908c90b119fa14b16e3ae56a934a$2y$05$xFkwvLCeM0qTGx7BtUKiP.1B4ja67n4.eSxyTWuBoTVqAMSRirMJ26512908c90b119fa14b16e3ae56a934a$2y$05$AvUIIrNWmgEbGSP9A4EXpOAOIGr9azUSSAoEJGKkPkxgIK/8yB70q6512908c90b119fa14b16e3ae56a934a$2y$05$ZeGdGKPRGgzQfadHlF4v9.RL/94lNfjLxu7b.E7cHCbLGzs2b83Xm6512908c90b119fa14b16e3ae56a934a$2y$05$2v8doTZIZJtOOR.0oYs/iOVRVeMXsGYIQezJ5bVmOZp4HNsRLayqK6512908c90b119fa14b16e3ae56a934a$2y$05$c5/xuvOIFn0tYB/JCIh8Xu6J9tHgurGcPnr6XCh6EYEyoK.IcxRXy6512908c90b119fa14b16e3ae56a934a$2y$05$tqkao3FK8ohNaIqFobxV9u/X8px3cvH8WkckphDY3wFfdg857CQ7K6512908c90b119fa14b16e3ae56a934a$2y$05$bPfMrPaRBJzbuXcXWrqwYuA/6m9Lv5q6DI4/wTlHQtHNxu6FqougW6512908c90b119fa14b16e3ae56a934a$2y$05$hApWTXqSH2Djs00kQ6JUWuNNbEbr2ork8TTL.VYfTJFfvGcTr7LBa6512908c90b119fa14b16e3ae56a934a$2y$05$KWoYTOrDFEDBuHJIn4P43eSYk.4BvV0nw3OE8pa.nStI9cZv51l5W6512908c90b119fa14b16e3ae56a934a$2y$05$X8Q2xWGdI6oEtE8vtWmeqe1WRCJfWzD4l/Sgt26Jr77KGZVlFdhre6512908c90b119fa14b16e3ae56a934a$2y$05$krjRCjF0KkwwWGH4uUGRLOq5Edtdwmu0x.tRlXnvGzAs5W/yoLXbq6512908c90b119fa14b16e3ae56a934a$2y$05$JVgdoujgzHxB5X5p..K5beswJZrecWHYOFhBwZh0H8JoVvhleIh9S6512908c90b119fa14b16e3ae56a934a$2y$05$xuYLtaN25z9JsTQAkPGlmuMHrtjeXjvXzBAIAqueDAkGVAcYMixkG6512908c90b119fa14b16e3ae56a934a$2y$05$VYzE1da6x3FLqiMdNGk3F.ipt8A7YVI0fYytjveJ8RMCh6wNLQE3q6512908c90b119fa14b16e3ae56a934a$2y$05$gcT94dM4JHhwH03G40RdH.beKkTYHk3iqb.7c/XS3MZsFgq/Fuxw26512908c90b119fa14b16e3ae56a934a$2y$05$Ypq3eNkfNdxn5CwJpQ8Bou67Q/SC0WdGXYWAzQT25zUAQRBzZ8Ma.6512908c90b119fa14b16e3ae56a934a$2y$05$5qIymvFPyAs4IqgYfiOA..ai89TySbW3zSlnYquNQgyXx8siNJNnO6512908c90b119fa14b16e3ae56a934a$2y$05$ER3TIwqFZQQo4shdzSRd6.fflojhAwh8y7GM5YZqUN7LfS0hK.jq.6512908c90b119fa14b16e3ae56a934a$2y$05$FNU02ZPhDsER480lCnbQgeE/sEtKnNT26W/8RZXD5ebAEyJjW24oi6512908c90b119fa14b16e3ae56a934a$2y$05$k1MbYRyiXdkoTYXYThtdp.8l4f4DyVBIIa8O.BYZpSF54Lm7DpE1u6512908c90b119fa14b16e3ae56a934a$2y$05$TWPr3d6XxPloQstAGttJ5.w0VIsV/fv3ursJ7z1pOtSlTMVc6R.g.6512908c90b119fa14b16e3ae56a934a$2y$05$LSZVUlFpAfQytCx.qZuLLOjZqE.CGxw9IpXN8XCNMs/iEnC.gZtW66512908c90b119fa14b16e3ae56a934a$2y$05$kB7jWlHQeseDZ5YM8CKqFOTqZ/c.1Snc0Pr6savzL8xlj74khKsgO6512908c90b119fa14b16e3ae56a934a$2y$05$TEmhxbf/9QI9ANMeoUWW1.j3jTTeCouxAxMyJDVAYwVuSzOYIWi3u6512908c90b119fa14b16e3ae56a934a$2y$05$uXRWVU7AocZHYOKGnxqv/.yrpWhZhEV0.Wzk8UDh2nks3ZwjYYTlS6512908c90b119fa14b16e3ae56a934a$2y$05$fDmwdP/KNf68QeS.zYJH2uMa06/MCCEeNr9yWAyvadbEJILxsZGgG6512908c90b119fa14b16e3ae56a934a$2y$05$jgct2DNINBbrZY1KZQPn3uHJSNn42b3Dprmrq6kOzw8gjAaoOMNhK6512908c90b119fa14b16e3ae56a934a$2y$05$dskWvDvKrCZttmsv/Ul/oucV.yp5pXgKjmxoUWPgXU.ZRl6bbmmAy6512908c90b119fa14b16e3ae56a934a$2y$05$JG624vCZ7nVCDF4UjX5j3OXVupcx0ei0H5596NrRFe9M5RMrW8sre6512908c90b119fa14b16e3ae56a934a$2y$05$3q5S/5pGYj2cx9Mddlyxtuko5VXHHqTBWLGnoy195KTDt5SwtcDOy6512908c90b119fa14b16e3ae56a934a$2y$05$2cNUuFO8jJ7Zcg/Zlymeuu9HH7jh24j6QsOMSep/jqCnPZubfX0Y." />
+        <meta-data
+            android:name="com.google.key2"
+            android:value="6512908c90b119fa14b16e3ae56a934a" />
+
+        <activity android:name="com.multixpro.user.InviteStageActivity" />
+        <activity android:name="com.multixpro.user.EmailStageActivity" />
+        <activity android:name="com.multixpro.user.NameStageActivity" />
+        <activity android:name="com.multixpro.user.PasswordStageActivity" />
+        <activity
+            android:name="com.multixpro.user.MobileStegeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.general.call.V3CallScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.SearchCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.RideDeliveryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.multixpro.user.deliverAll.checkAddView" /> <!-- Rent item Activities -->
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemNewPostActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemListPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemReviewPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemOwnerInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rentItem.RentItemInquiry"
+            android:screenOrientation="portrait" /> <!-- Rent item Activities -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.multixpro.user.MenuSettingActivity" />
+        <activity
+            android:name="com.multixpro.user.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UberXHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.DonationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.PrescriptionHistoryImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.PrescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ProviderInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.sinch.android.rtc.internal.client.fcm.InstanceIDTokenService"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_android_geo_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.general.files.AlarmReceiver"
+            android:enabled="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+            <!-- </intent-filter> -->
+        </receiver>
+        <receiver
+            android:name="com.huawei.BootAlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.multixpro.user.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="true" />
+
+        <service
+            android:name="com.huawei.MyHmsMessageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ <service
+            android:name="com.general.files.MyBackGroundService"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Service Alert"
+            android:persistent="true" />
+        -->
+        <!--
+   <receiver
+            android:name=".StartServiceReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name=".StartServiceReceiver" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.multixpro.user.LauncherActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.multixpro.user.AppLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.SelectCountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.VerifyFbProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.nearbyservice.NearByServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.nearbyservice.NearByDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/FBtheme"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.multixpro.user.SearchPickupLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.FareEstimateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MyProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.StaticPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.QuestionAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.HelpActivity23Pro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.HelpMainCategory23Pro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.HistoryDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.App.Base" />
+        <activity
+            android:name="com.multixpro.user.RatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.CardPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.EmergencyContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ConfirmEmergencyTapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.EnterDeliveryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MyWalletHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.InviteFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.VerifyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UberXSelectServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UberXActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.OnGoingTripsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.OnGoingTripDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.AppLoignRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.AccountverificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.SupportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.FareBreakDownActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.PrefranceActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.multixpro.user.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.multixpro.user.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.multixpro.user.SearchLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ListAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ScheduleDateSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.AppRestrictedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ManageAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.DeleteAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.Help_MainCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.Help_SubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.Help_DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.RentalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.RentalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cropper.CropImageActivity"
+            android:screenOrientation="portrait" /> <!-- Multi delivery_v2 Screens -->
+        <activity
+            android:name="com.multixpro.user.CommonDeliveryTypeSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.EnterMultiDeliveryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MultiDeliverySecondPhaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MultiDeliveryThirdPhaseActivity"
+            android:screenOrientation="portrait" /> <!-- Deliver all -->
+        <activity
+            android:name="com.multixpro.user.deliverAll.FoodDeliveryHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.SearchFoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.RestaurantsSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.SearchRestaurantListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.AddBasketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.CheckOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.EditCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.PaymentCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.ServiceHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.OrderPlaceConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.ActiveOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.TrackOrderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.FoodRatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.RestaurantAllDetailsNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.BusinessProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.BusinessSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.SelectOrganizationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.OrganizationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MyBusinessProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.NotificationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.QuickPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.livechatinc.inappchat.ChatWindowActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UberxFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MoreInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UberxCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.CarWashBookingDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.MoreServiceInfoActivity"
+            android:screenOrientation="portrait" /> <!-- Book for Some Else Activities -->
+        <activity
+            android:name="com.multixpro.user.BookSomeOneElsePickContactActivity"
+            android:screenOrientation="portrait" /> <!-- FavDriver Activities -->
+        <activity
+            android:name="com.multixpro.user.FavouriteDriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.BookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.ViewMultiDeliveryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.UserPrefrenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.GenieDeliveryHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.BuyAnythingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.general.files.SafetyDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.general.files.CovidDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" /> <!-- Verify Charges -->
+        <activity
+            android:name="com.multixpro.user.AdditionalChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.PaymentWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.deliverAll.FindStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.SearchServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.multixpro.user.BiddingHistoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.BiddingTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.RequestBidInfoActivity"
+            android:screenOrientation="portrait" /> <!-- Ride Sharing -->
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideBookingRequestedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RidePublish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideBookSearchList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideBookDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideBookSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideMyList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideMyDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.rideSharing.RideUploadDocActivity"
+            android:screenOrientation="portrait" />
+        <!-- Tracking family -->
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnyList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnyProfileVehicle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnyLiveTracking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnyProfileSetup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnySignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.TrackAnyVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.trackService.PairCodeGenrateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.giftcard.GiftCardRedeemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.multixpro.user.giftcard.GiftCardSendActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

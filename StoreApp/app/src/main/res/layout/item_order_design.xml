@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/orderItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/cardview_background_with_line_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/orderIdTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text23Pro_Dark"
+                    android:textSize="@dimen/_10ssp"
+                    app:customTypeFace="@string/system_semi_bold"
+                    tools:text="#12345678" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTakeAway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:cardBackgroundColor="@color/appThemeColor_1"
+                    app:cardCornerRadius="@dimen/_2sdp">
+
+                    <com.view.MTextView
+                        android:id="@+id/takeAwayTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8ssp"
+                        app:customTypeFace="@string/system_semi_bold"
+                        tools:text="take away" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/noItemsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/_10ssp"
+                    app:customTypeFace="@string/system_semi_bold"
+                    tools:text="1 item" />
+
+                <com.view.MTextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:gravity="end|center"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#818181"
+                    android:textSize="@dimen/_9ssp"
+                    app:customTypeFace="@string/system_semi_bold"
+                    tools:text="12:54 PM" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/extraView"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

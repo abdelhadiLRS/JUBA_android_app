@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/design_toolbar_general" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnArea"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <com.view.MTextView
+
+                        android:id="@+id/serviceNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FFFFFF"
+                        android:gravity="start|center"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Service Name"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:visibility="gone"
+                        app:customTypeFace="@string/system_semi_bold"
+                        tools:text="Service Name" />
+                    <include
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/CateoryBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                    <include
+                        android:id="@+id/AddCateoryBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:visibility="gone" />
+
+                    <com.view.MTextView
+
+                        android:id="@+id/serviceDescTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FFFFFF"
+                        android:gravity="start|center"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp"
+                        android:visibility="gone"
+                        app:customTypeFace="@string/system_regular"
+                        tools:text="Service Desc" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/locSelectArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <include
+                                android:id="@+id/locBox"
+                                layout="@layout/editbox_form_design"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_gravity="center_vertical|end"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:gravity="center"
+                                app:srcCompat="@drawable/ic_down_arrow" />
+                        </FrameLayout>
+
+                        <include
+                            android:id="@+id/amountBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/square_border_common">
+
+
+                            <com.view.editBox.MaterialEditText
+                                android:id="@+id/commentBox"
+                                layout="@layout/editbox_form_design"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:text=""
+                                android:textColor="#757575"
+                                android:textSize="@dimen/_13ssp"
+                                app:customTypeFace="@string/system_light" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/expDateSelectArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+                                <com.view.MTextView
+                                    android:id="@+id/bidDateBoxLBL"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/gray"
+
+                                    android:maxWidth="@dimen/_150sdp"
+                                    android:textSize="@dimen/_14ssp"
+                                    app:customTypeFace="@string/system_regular"
+                                    tools:text="Expiry Date" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/bidBoxTxt"
+                                    android:layout_width="wrap_content"
+                                    android:maxWidth="@dimen/_150sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/bidDateBoxLBL"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11ssp"
+                                    app:customTypeFace="@string/system_semi_bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/selectyear_layout"
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:minHeight="@dimen/_35sdp"
+                                    android:padding="@dimen/_5sdp">
+
+                                    <ImageView
+                                        android:layout_alignParentEnd="true"
+                                        android:id="@+id/calanderView"
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="end"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:gravity="center"
+                                        app:srcCompat="@drawable/ic_bidding_schedule"
+                                      />
+
+                                    <com.view.MTextView
+                                        android:visibility="gone"
+                                        android:id="@+id/reqBox"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:maxWidth="@dimen/_40sdp"
+                                        android:maxLines="2"
+                                        android:textColor="#7d7d7d"
+                                        android:textSize="@dimen/_11ssp"
+                                        app:customTypeFace="@string/system_regular"
+                                        tools:text="SelectSelectSelect" />
+
+                                    <ImageView
+                                        android:visibility="gone"
+                                        android:id="@+id/arrow"
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_vertical|end"
+                                        android:layout_marginEnd="5dp"
+                                        android:gravity="center"
+                                        android:src="@mipmap/ic_arrow_down" />
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/btn_type2"
+            layout="@layout/btn_type_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_btn_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnArea"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+
+        <com.view.MTextView
+            android:id="@+id/cancelTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/selected_without_border"
+            android:backgroundTint="@color/gray"
+
+            android:gravity="center"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_14"
+            app:customTypeFace="@string/system_semi_bold"
+            tools:text="Decline" />
+        <com.view.MTextView
+
+
+            android:id="@+id/confirmTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@drawable/selected_border"
+            android:backgroundTint="@color/appThemeColor_1"
+            android:gravity="center"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_14"
+            app:customTypeFace="@string/system_semi_bold"
+            tools:text="Accept" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

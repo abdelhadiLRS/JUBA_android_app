@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".deliverAll.SearchStoreForGenie">
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/deliverall_design_toolbar_general" />
+
+    <LinearLayout
+        android:id="@+id/searchLocArea"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/appThemeColor_1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/searchFrameArea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/search_shape"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_gravity="start|center"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginStart="@dimen/_20sdp"
+                android:id="@+id/searchTxt"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:background="@drawable/search_shape"
+                android:hint=""
+                android:imeOptions="actionSearch"
+                android:padding="5dp"
+                android:paddingEnd="25dp"
+                android:singleLine="true"
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_cancel_cab_request"
+                android:tint="@android:color/black" />
+
+
+            <com.view.anim.loader.AVLoadingIndicatorView
+
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/loaderView"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:visibility="gone"
+                app:indicator="BallPulse"
+                app:indicator_color="@color/Gray" />
+
+
+        </FrameLayout>
+
+        <com.view.MTextView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:id="@+id/cancelTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="5dp"
+            android:textAllCaps="true"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_14"
+            app:customTypeFace="@string/system_light" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="#b9b9b9" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:rotation="-45" />
+
+        <com.view.MTextView
+            android:id="@+id/orTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:customTypeFace="@string/system_light" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/myLocationarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:minHeight="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/setLocArea"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/round_shape"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp">
+
+            <ImageView
+                android:id="@+id/currentLocImage"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_gravity="center"
+                android:tint="@color/appThemeColor_TXT_1"
+                app:srcCompat="@drawable/ic_current_location" />
+
+        </LinearLayout>
+
+
+        <com.view.MTextView
+            android:id="@+id/setLocTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center"
+
+            android:text="Set Location of the store on map"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible"
+            app:customTypeFace="@string/system_regular" />
+
+        <ImageView
+
+            android:id="@+id/arrow_right"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+</LinearLayout>

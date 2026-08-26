@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appThemeColor_1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appThemeColor_1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/backBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:rotation="180"
+                        app:srcCompat="@drawable/ic_right_arrow_1" />
+
+                    <com.view.MTextView
+                        android:id="@+id/imageHeaderTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp"
+                        app:customTypeFace="@string/system_semi_bold"
+                        tools:text="you pick of rides at low prices gdfgdfgdfg" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    app:srcCompat="@drawable/ic_ride_book" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/card_view_23_gray_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            app:srcCompat="@drawable/round_shape"
+                            app:tint="#008000" />
+
+                        <com.view.DividerView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_39sdp"
+                            android:layerType="software"
+                            app:dividerColor="@color/view23ProBG"
+                            app:dividerDashGap="4dp"
+                            app:dividerDashLength="4dp"
+                            app:dividerOrientation="vertical" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            app:srcCompat="@drawable/round_shape"
+                            app:tint="#CA3939" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/card_view_23_white_shadow">
+
+                            <com.view.MTextView
+                                android:id="@+id/startLocationBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:ellipsize="end"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/text23Pro_Dark"
+                                android:textColorHint="@color/text23Pro_Light"
+                                android:textSize="@dimen/_12ssp"
+                                app:customTypeFace="@string/system_regular"
+                                tools:hint="leaving from" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/card_view_23_white_shadow">
+
+                            <com.view.MTextView
+                                android:id="@+id/endLocationBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                android:ellipsize="end"
+                                android:gravity="start|center"
+                                android:includeFontPadding="false"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/text23Pro_Dark"
+                                android:textColorHint="@color/text23Pro_Light"
+                                android:textSize="@dimen/_12ssp"
+                                app:customTypeFace="@string/system_regular"
+                                tools:hint="going to" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/dateTimeHTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text23Pro_Dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:customTypeFace="@string/system_semi_bold"
+                        tools:text="date &amp; time" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_minus1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/card_view_23_white_shadow">
+
+                        <com.view.MTextView
+                            android:id="@+id/dateTimeEditBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:drawableEnd="@drawable/ic_calendar"
+                            android:ellipsize="end"
+                            android:gravity="start|center"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/text23Pro_Dark"
+                            android:textColorHint="@color/text23Pro_Light"
+                            android:textSize="@dimen/_12ssp"
+                            app:customTypeFace="@string/system_regular"
+                            tools:hint="selecte date &amp; time" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/personHTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text23Pro_Dark"
+                        android:textSize="@dimen/_12ssp"
+                        app:customTypeFace="@string/system_semi_bold"
+                        tools:text="person" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_minus1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/card_view_23_white_shadow">
+
+                        <com.view.MTextView
+                            android:id="@+id/personSeatTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:drawableEnd="@drawable/ic_down_arrow_23"
+                            android:ellipsize="end"
+                            android:gravity="start|center"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:textColor="@color/text23Pro_Dark"
+                            android:textColorHint="@color/text23Pro_Light"
+                            android:textSize="@dimen/_12ssp"
+                            app:customTypeFace="@string/system_regular"
+                            tools:hint="select" />
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/searchBtn"
+                        layout="@layout/btn_type_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_marginTop="@dimen/_15sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
