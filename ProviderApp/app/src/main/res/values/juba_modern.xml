@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="juba_primary">#1565C0</color>
+    <color name="juba_primary_dark">#0D47A1</color>
+    <color name="juba_secondary">#00A896</color>
+    <color name="juba_surface">#FFFFFF</color>
+    <color name="juba_background">#F5F7FA</color>
+    <color name="juba_text">#172033</color>
+    <color name="juba_text_secondary">#667085</color>
+
+    <style name="JubaModernTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/juba_primary</item>
+        <item name="colorPrimaryVariant">@color/juba_primary_dark</item>
+        <item name="colorSecondary">@color/juba_secondary</item>
+        <item name="android:windowBackground">@color/juba_background</item>
+        <item name="android:navigationBarColor">@color/juba_surface</item>
+        <item name="android:statusBarColor">@color/juba_primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">@font/app_font_regular</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
