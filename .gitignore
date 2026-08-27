@@ -1,31 +1,37 @@
-﻿# Android / Gradle
+# Android / Gradle
 **/build/
 **/.gradle/
+.gradle/
 
 # Android Studio
 .idea/
 *.iml
+*.ipr
+*.iws
 
 # Local configuration
 local.properties
 
-# OS
+# OS / temporary files
 .DS_Store
 Thumbs.db
-
-# Temporary files
 *.log
 *.tmp
+*.swp
 
-# Keep production APKs
-!ProviderApp/app/prod/
-!ProviderApp/app/prod/release/
-!ProviderApp/app/prod/release/*.apk
+# Generated Android outputs
+**/outputs/
+**/captures/
+**/reports/
 
-!StoreApp/app/prod/
-!StoreApp/app/prod/release/
-!StoreApp/app/prod/release/*.apk
+# Release artifacts - publish through GitHub Releases/CI, not Git history
+**/app/prod/release/*.apk
+**/app/prod/release/*.aab
+**/app/prod/release/output-metadata.json
 
-!UserApp/app/prod/
-!UserApp/app/prod/release/
-!UserApp/app/prod/release/*.apk
+# Signing / secrets
+*.jks
+*.keystore
+*.p12
+*.pem
+secrets.properties
