@@ -1,1 +1,22 @@
+// JUBA dependency recovery layer.
+// Some legacy Android artifacts used by the original application are no longer
+// reliably served from the standard repositories. Keep the application Gradle
+// files stable while routing the legacy WebRTC artifact through a pinned mirror.
 include ':app'
+
+gradle.beforeProject { project ->
+    project.repositories {
+        maven { url 'https://raw.githubusercontent.com/ALEXGREENCH/google-webrtc/master' }
+    }
+
+    project.configurations.configureEach {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'org.webrtc' &&
+                    details.requested.name == 'google-webrtc' &&
+                    details.requested.version == '1.0.32006') {
+                details.useVersion '1.0.30039'
+                details.because 'Recover the legacy WebRTC artifact from a pinned Maven mirror.'
+            }
+        }
+    }
+}
