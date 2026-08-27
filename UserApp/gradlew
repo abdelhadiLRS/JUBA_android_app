@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Minimal POSIX Gradle wrapper launcher for UserApp.
+# The wrapper JAR and distribution settings are kept under gradle/wrapper.
+APP_HOME=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+CLASSPATH="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+
+if [ ! -f "$CLASSPATH" ]; then
+  echo "Gradle wrapper JAR not found: $CLASSPATH" >&2
+  exit 1
+fi
+
+exec java -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
