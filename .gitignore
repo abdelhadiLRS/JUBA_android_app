@@ -1,4 +1,4 @@
-﻿# Android / Gradle
+# Android / Gradle
 **/build/
 **/.gradle/
 
@@ -8,6 +8,11 @@
 
 # Local configuration
 local.properties
+
+# Secrets / signing material
+**/*.jks
+**/*.keystore
+**/keystore.properties
 
 # OS
 .DS_Store
